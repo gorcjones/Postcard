@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="YsN-hP-mnP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fDc-YB-9f4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="YT5-JT-9Fi">
@@ -44,7 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cia-Jo-fsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="867" y="400"/>
+            <point key="canvasLocation" x="610" y="400"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -103,6 +104,15 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vng-OG-IUl"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oq8-O5-ord">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="132" width="206" height="30"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +122,7 @@
                                 <exclude reference="jUe-Nn-arl"/>
                                 <exclude reference="gMR-ht-ELQ"/>
                                 <exclude reference="8B0-4L-0kj"/>
+                                <exclude reference="Oq8-O5-ord"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,6 +132,7 @@
                                 <include reference="jUe-Nn-arl"/>
                                 <include reference="gMR-ht-ELQ"/>
                                 <include reference="8B0-4L-0kj"/>
+                                <include reference="Oq8-O5-ord"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,11 +141,12 @@
                         <outlet property="enterNameTextField" destination="pcj-Tl-ddY" id="08v-t7-BdU"/>
                         <outlet property="mailButton" destination="8B0-4L-0kj" id="Wfu-qL-L5N"/>
                         <outlet property="messageLabel" destination="gMR-ht-ELQ" id="D3y-VC-Ls0"/>
+                        <outlet property="nameLabel" destination="Oq8-O5-ord" id="nzn-hX-78b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1486.5" y="385"/>
+            <point key="canvasLocation" x="1287" y="400"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aS6-Jj-yOM">
